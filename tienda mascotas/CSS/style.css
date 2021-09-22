@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color:#3C2313;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+li {
+    padding: 5px;
+}
+
+
+nav,
+ul, 
+section.nav-setting,
+section.nav-principal nav,  
+section.banner, 
+.destacados header, 
+.destacados article, 
+.destacados article figure,
+.formulario,
+.formulario form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul, 
+section.nav-setting {
+    justify-content: space-around;
+}
+
+header section.nav-setting {
+    background-color:black;
+    color: white;
+}
+
+header section.nav-principal {
+    background-color: #F0A83E;
+    padding: 24px;
+}
+
+section.nav-principal nav {
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+/* espaciado entre las patas y la navegacion principal */
+section.nav-principal > nav > ul > li > img {
+    padding-right: 3px;
+}
+
+section.banner {
+    background-image: url('../img/bowl-and-pet-daities-on-green-background\ 1.png');
+    color: #3C2313;
+    background-size: cover;
+    height: 490px;
+    text-align: center;
+
+    position: relative;
+    justify-content: flex-end;
+}
+
+
+
+section.banner h3 {
+    background: white;
+    font-size: 30px;
+    /* height: 54px; */
+    border-radius: 5px;
+    padding: 7px;
+    margin-right: 12px;
+
+}
+
+section.banner button {
+    background: #F0A83E;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 7px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section.banner p {
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+
+section.destacados article {
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+}
+
+
+
+section.destacados a {
+    color: #666666;
+}
+
+
+.destacados header {
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vh;
+    line-height: 2em;
+}
+
+
+.destacados article figure {
+    flex-direction: column;
+    justify-content: center;
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+section article figure span {
+    color: #F0A83E;
+    font-weight: bold;
+}
+
+
+/* formulario */
+
+.formulario {
+    flex-direction: column;
+    padding: 3vh;
+}
+
+.formulario > h3 {
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.formulario form {
+    flex-direction: inherit;
+}
+
+
+
+.formulario form > div.botonesForm {
+    padding: 10px; 
+}
+
+input {
+    margin-bottom: 10px;
+    background-color: #3C2313;
+    width: 340px;
+    height: 40px;
+    border-radius: 15px;
+    color: white;
+}
+
+::placeholder {
+    padding-left: 14px;
+    color: white;
+    font-size: 9px;
+    line-height: 11px;
+}
+
+div.botonesForm > input {
+    width: 110px;
+    height: 34px; 
+    border: transparent;
+    margin-top: 15px;
+transition: all .3s ease-in;
+}
+.card.card-btn:hover{
+    cursor: pointer;
+
+    background-color: #3C2313;
+}
+#submit {
+    background-color: #F0A83E;
+}
+
+#reset {
+    background-color: #8A8787;
+}
+
+
+
+
+/* inicio footer */
+/*footer {
+    position: absolute;
+    width: 1024px;
+    height: 60px;
+    left: calc(50% - 1024px/2);
+    top: calc(50% - 60px/2 + 575.5px);
+    background: #F0A83E;
+}*/
+
+footer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+footer {
+    background-color: #3C2313;
+    color: white;
+}
+
+footer section.centrado p {
+    text-align: center;
+    background-color: #F0A83E;
+}
+
+
+/*@media(max = 580px)*/
+
+/*animaciones*/
+
+@keyframes 
